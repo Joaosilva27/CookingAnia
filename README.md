@@ -1,2 +1,2 @@
 # CookingAnia
-App to keep track of my beautiful gf's recipes
+App to keep track of my beautiful gf's recipes ❤️
