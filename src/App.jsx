@@ -5,6 +5,7 @@ import mealIcon from "./icons/steak.png";
 import soupIcon from "./icons/ramen.png";
 import snackIcon from "./icons/onigiri.png";
 import dessertIcon from "./icons/cheesecake.png";
+import smoothieIcon from "./icons/smoothie.png";
 
 function App() {
   const mealCategories = [
@@ -12,6 +13,7 @@ function App() {
     { id: 2, name: "Soups", icon: soupIcon },
     { id: 3, name: "Snacks", icon: snackIcon },
     { id: 4, name: "Desserts", icon: dessertIcon },
+    { id: 5, name: "Smoothies", icon: smoothieIcon },
   ];
 
   return (
