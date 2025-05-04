@@ -1,11 +1,10 @@
 import "./App.css";
 import CookingMamaIcon from "./icons/cooking_mama.png";
 import MealCategoryButton from "./components/MealCategoryButton";
-
-const mealIcon = "/api/placeholder/64/64";
-const soupIcon = "/api/placeholder/64/64";
-const snackIcon = "/api/placeholder/64/64";
-const dessertIcon = "/api/placeholder/64/64";
+import mealIcon from "./icons/steak.png";
+import soupIcon from "./icons/ramen.png";
+import snackIcon from "./icons/onigiri.png";
+import dessertIcon from "./icons/cheesecake.png";
 
 function App() {
   const mealCategories = [
