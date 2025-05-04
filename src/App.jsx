@@ -9,19 +9,18 @@ import Header from "./components/Header";
 
 function App() {
   const mealCategories = [
-    { id: 1, name: "Meals", icon: mealIcon },
-    { id: 2, name: "Soups", icon: soupIcon },
-    { id: 3, name: "Snacks", icon: snackIcon },
-    { id: 4, name: "Desserts", icon: dessertIcon },
-    { id: 5, name: "Smoothies", icon: smoothieIcon },
+    { id: 1, name: "Meals", icon: mealIcon, route: "meals" },
+    { id: 2, name: "Soups", icon: soupIcon, route: "soups" },
+    { id: 3, name: "Snacks", icon: snackIcon, route: "snacks" },
+    { id: 4, name: "Desserts", icon: dessertIcon, route: "desserts" },
+    { id: 5, name: "Smoothies", icon: smoothieIcon, route: "smoothies" },
   ];
 
   return (
-    <div className='p-4 bg-yellow-50 min-h-screen'>
-      <Header />
+    <div className='min-h-screen'>
       <div className='flex flex-wrap justify-center'>
         {mealCategories.map(category => (
-          <MealCategoryButton key={category.id} image={category.icon} text={category.name} />
+          <MealCategoryButton key={category.id} image={category.icon} text={category.name} route={category.route} />
         ))}
       </div>
     </div>
