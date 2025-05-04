@@ -17,7 +17,7 @@ function App() {
   ];
 
   return (
-    <div className='min-h-screen'>
+    <div>
       <div className='flex flex-wrap justify-center'>
         {mealCategories.map(category => (
           <MealCategoryButton key={category.id} image={category.icon} text={category.name} route={category.route} />
