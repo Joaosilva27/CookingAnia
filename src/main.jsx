@@ -9,6 +9,7 @@ import SnacksPage from "./pages/SnacksPage.jsx";
 import DessertPage from "./pages/DessertPage.jsx";
 import SmoothiesPage from "./pages/SmoothiesPage.jsx";
 import Header from "./components/Header.jsx";
+import RecipesPage from "./components/RecipesPage.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -21,6 +22,7 @@ createRoot(document.getElementById("root")).render(
         <Route path='/snacks' element={<SnacksPage />} />
         <Route path='/desserts' element={<DessertPage />} />
         <Route path='/smoothies' element={<SmoothiesPage />} />
+        <Route path='/recipe/:id' element={<RecipesPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

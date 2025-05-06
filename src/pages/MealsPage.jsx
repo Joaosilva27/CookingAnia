@@ -23,7 +23,7 @@ import EggPattiesPicture from "../recipeImages/egg_patties_fries_salad.jpg";
 
 export default function MealsPage() {
   const mealRecipes = [
-    { title: "Miso Salmon", src: MisoSalmonPicture },
+    { title: "Miso Salmon", src: MisoSalmonPicture, id: "miso-salmon" },
     { title: "Garlic Mirin Chicken", src: GarlicMirinChickenPicture },
     { title: "Ramen", src: RamenPicture },
     { title: "Bibimbap", src: BibimbapPicture },
@@ -49,7 +49,7 @@ export default function MealsPage() {
     <div className='pt-4 md:pl-15 md:pr-15'>
       <div className='flex flex-wrap justify-center'>
         {mealRecipes.map((recipe, index) => (
-          <RecipeContainer id={index} title={recipe.title} image={recipe.src} />
+          <RecipeContainer id={recipe.id} title={recipe.title} image={recipe.src} />
         ))}
       </div>
     </div>
