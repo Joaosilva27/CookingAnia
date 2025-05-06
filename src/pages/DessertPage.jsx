@@ -6,9 +6,9 @@ import BananaBreadPicture from "../recipeImages/banana_bread.jpg";
 
 export default function DessertPage() {
   const dessertRecipes = [
-    { title: "Basque Cheesecake", src: CheesecakePicture },
-    { title: "Mango Sticky Rice", src: MangoStickyRicePicture },
-    { title: "Banana Bread", src: BananaBreadPicture },
+    { title: "Basque Cheesecake", src: CheesecakePicture, id: "basque-cheesecake" },
+    { title: "Mango Sticky Rice", src: MangoStickyRicePicture, id: "mango-sticky-rice" },
+    { title: "Banana Bread", src: BananaBreadPicture, id: "banana-bread" },
   ];
 
   return (

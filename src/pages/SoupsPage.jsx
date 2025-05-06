@@ -3,7 +3,7 @@ import RecipeContainer from "../components/RecipeContainer";
 import BeefUdonImage from "../recipeImages/beef_udon_soup.jpg";
 
 export default function SoupsPage() {
-  const soupRecipes = [{ title: "Beef Udon", src: BeefUdonImage }];
+  const soupRecipes = [{ title: "Beef Udon", src: BeefUdonImage, id: "beef-udon" }];
 
   return (
     <div className='pt-4 md:pl-15 md:pr-15'>
