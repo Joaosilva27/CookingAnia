@@ -5,6 +5,7 @@ export const recipes = [
     id: "miso-salmon",
     title: "Miso Salmon",
     image: MisoSalmonPicture,
+    images: [MisoSalmonPicture, MisoSalmonPicture, MisoSalmonPicture],
     ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
     instructions: [
       "Preheat the oven to 200°C (390°F).",
