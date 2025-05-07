@@ -6,9 +6,9 @@ import PlackiZiemniaczanePicture from "../recipeImages/placki_ziemniaczane.jpg";
 
 export default function SnacksPage() {
   const snackRecipes = [
-    { title: "Syrniki", src: SyrnikiPicture },
-    { title: "Turkish Ham Sandwich", src: TurkishHamSandwichPicture },
-    { title: "Placki Ziemniaczane", src: PlackiZiemniaczanePicture },
+    { title: "Syrniki", src: SyrnikiPicture, id: "syrniki" },
+    { title: "Turkish Ham Sandwich", src: TurkishHamSandwichPicture, id: "turkish-ham-sandwich" },
+    { title: "Placki Ziemniaczane", src: PlackiZiemniaczanePicture, id: "placki-ziemniaczane" },
   ];
 
   return (
