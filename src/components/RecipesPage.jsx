@@ -18,20 +18,22 @@ export default function RecipePage() {
           alt={recipe.title}
           className='w-full max-w-md rounded-3xl border-4 border-pink-300 shadow-lg mb-4 transition-all duration-300'
         />
-        <div className='flex flex-wrap gap-2 justify-center'>
-          {/* must map through .image as well so the current img is not lost once another one is selected */}
-          {[recipe.image, ...recipe.images].map((img, idx) => (
-            <img
-              key={idx}
-              src={img}
-              onClick={() => setCurrentImage(img)}
-              className={`w-20 h-20 object-cover rounded-xl cursor-pointer border-2 ${
-                currentImage === img ? "border-pink-500" : "border-transparent"
-              } hover:scale-105 transition`}
-              alt={`Recipe thumbnail ${idx}`}
-            />
-          ))}
-        </div>
+        {recipe.images && (
+          <div className='flex flex-wrap gap-2 justify-center'>
+            {/* must map through .image as well so the current img is not lost once another one is selected */}
+            {[recipe.image, ...recipe.images].map((img, idx) => (
+              <img
+                key={idx}
+                src={img}
+                onClick={() => setCurrentImage(img)}
+                className={`w-20 h-20 object-cover rounded-xl cursor-pointer border-2 ${
+                  currentImage === img ? "border-pink-500" : "border-transparent"
+                } hover:scale-105 transition`}
+                alt={`Recipe thumbnail ${idx}`}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
       {/* right div */}
