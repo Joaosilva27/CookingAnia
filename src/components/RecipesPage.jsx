@@ -10,7 +10,7 @@ export default function RecipePage() {
   if (!recipe) return <p>Recipe not found</p>;
 
   return (
-    <div className='flex flex-col md:flex-row gap-6 p-6 max-w-6xl mx-auto font-cute'>
+    <div className='flex flex-col md:flex-row gap-6 p-6 max-w-6xl mx-auto'>
       {/* left div */}
       <div className='md:w-1/2 flex flex-col items-center'>
         <img

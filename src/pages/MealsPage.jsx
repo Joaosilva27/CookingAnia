@@ -48,7 +48,7 @@ export default function MealsPage() {
   return (
     <div className='pt-4 md:pl-15 md:pr-15'>
       <div className='flex flex-wrap justify-center'>
-        {mealRecipes.map((recipe, index) => (
+        {mealRecipes.map(recipe => (
           <RecipeContainer id={recipe.id} title={recipe.title} image={recipe.src} />
         ))}
       </div>

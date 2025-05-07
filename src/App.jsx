@@ -5,7 +5,6 @@ import soupIcon from "./icons/ramen.png";
 import snackIcon from "./icons/onigiri.png";
 import dessertIcon from "./icons/cheesecake.png";
 import smoothieIcon from "./icons/smoothie.png";
-import Header from "./components/Header";
 
 function App() {
   const mealCategories = [
