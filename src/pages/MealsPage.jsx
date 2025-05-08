@@ -1,8 +1,8 @@
 import React from "react";
 import RecipeContainer from "../components/RecipeContainer";
 import MisoSalmonPicture from "../recipeImages/salmon_miso.jpg";
+import TeriyakiSalmonPicture from "../recipeImages/tariyaki_salmon.jpg";
 import GarlicMirinChickenPicture from "../recipeImages/garlic_mirin_chicken.jpg";
-import RamenPicture from "../recipeImages/ramen.jpg";
 import BibimbapPicture from "../recipeImages/bibimbap.jpg";
 import TurkishEggsPicture from "../recipeImages/turkish_boiled_eggs.jpg";
 import StirFryUdonPicture from "../recipeImages/stir_fry_udon.jpg";
@@ -20,12 +20,13 @@ import PolishInspiredKatsuChickenPicture from "../recipeImages/polish_inspired_c
 import RedCurryChickenPicture from "../recipeImages/red_curry_chicken.jpg";
 import TunaBeanQuesadillaPicture from "../recipeImages/tuna_and_beans_quesadilla.jpg";
 import EggPattiesPicture from "../recipeImages/egg_patties_fries_salad.jpg";
+import PizzaHeartPicture from "../recipeImages/pizza_heart.jpg";
 
 export default function MealsPage() {
   const mealRecipes = [
     { title: "Miso Salmon", src: MisoSalmonPicture, id: "miso-salmon" },
+    { title: "Teriyaki Salmon", src: TeriyakiSalmonPicture, id: "teriyaki-salmon" },
     { title: "Garlic Mirin Chicken", src: GarlicMirinChickenPicture, id: "garlic-mirin-chicken" },
-    { title: "Ramen", src: RamenPicture, id: "ramen" },
     { title: "Bibimbap", src: BibimbapPicture, id: "bibimbap" },
     { title: "Turkish Soft Boiled Eggs", src: TurkishEggsPicture, id: "turkish-soft-boiled-eggs" },
     { title: "Stir Fry Udon", src: StirFryUdonPicture, id: "stir-fry-udon" },
@@ -43,6 +44,7 @@ export default function MealsPage() {
     { title: "Polish Inspired Katsu Chicken", src: PolishInspiredKatsuChickenPicture, id: "polish-inspired-katsu-chicken" },
     { title: "Red Curry Chicken", src: RedCurryChickenPicture, id: "red-curry-chicken" },
     { title: "Egg Patties with Fries and Salad", src: EggPattiesPicture, id: "egg-patties-with-fries-and-salad" },
+    { title: "Heart-Shaped Pizza", src: PizzaHeartPicture, id: "heart-shaped-pizza" },
   ];
 
   return (

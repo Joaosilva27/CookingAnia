@@ -14,8 +14,8 @@ export default function DessertPage() {
   return (
     <div className='pt-4 md:pl-15 md:pr-15'>
       <div className='flex flex-wrap justify-center'>
-        {dessertRecipes.map((recipe, index) => (
-          <RecipeContainer id={index} title={recipe.title} image={recipe.src} />
+        {dessertRecipes.map(recipe => (
+          <RecipeContainer id={recipe.id} title={recipe.title} image={recipe.src} />
         ))}
       </div>
     </div>
