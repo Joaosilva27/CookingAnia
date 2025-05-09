@@ -1,8 +1,28 @@
 import MisoSalmonPicture from "./recipeImages/salmon_miso.jpg";
 import MisoSalmonPicture2 from "./recipeImages/miso_salmon_2.jpg";
 import MisoSalmonPicture3 from "./recipeImages/miso_salmon_3.jpg";
+import TeriyakiSalmonPicture from "./recipeImages/tariyaki_salmon.jpg";
 import GarlicMirinChickenPicture from "./recipeImages/garlic_mirin_chicken.jpg";
+import McMuffinPicture from "./recipeImages/mc_muffin.jpg";
 import McMuffinPicture2 from "./recipeImages/mc_muffin_2.jpg";
+import BibimbapPicture from "./recipeImages/bibimbap.jpg";
+import TurkishSoftBoiledEggsPicture from "./recipeImages/turkish_boiled_eggs.jpg";
+import StirFryUdonPicture from "./recipeImages/stir_fry_udon.jpg";
+import AioliShrimpWithFriesPicture from "./recipeImages/aioli_shrimp.jpg";
+import AioliShrimpWithFriesPicture2 from "./recipeImages/aioli_shrimp_2.jpg";
+import HainaneseChickenPicture from "./recipeImages/hainanese_chicken_rice.jpg";
+import HainaneseChickenPicture2 from "./recipeImages/hainanese_chicken_rice_2.jpg";
+import HainaneseChickenPicture3 from "./recipeImages/hainanese_chicken_rice_3.png";
+import HainaneseChickenPicture4 from "./recipeImages/hainanese_chicken_rice_4.png";
+import HainaneseChickenPicture5 from "./recipeImages/hainanese_chicken_rice_5.png";
+import HainaneseChickenPicture6 from "./recipeImages/hainanese_chicken_rice_6.png";
+import FeijoadaPicture from "./recipeImages/feijoada.jpg";
+import StirFryBeefRicePicture from "./recipeImages/stir_fry_beef_rice.jpg";
+import PolishCabaggeRollsPicture from "./recipeImages/polish_cabagge_rolls.jpg";
+import FishTacosPicture from "./recipeImages/fish_tacos.jpg";
+import TunaBeansQuesadillaPicture from "./recipeImages/tuna_and_beans_quesadilla.jpg";
+import KoreanColdNoodlesPicture from "./recipeImages/korean_cold_noodles.jpg";
+import ChickenKatsuCurryPicture from "./recipeImages/chicken_katsu_curry.jpg";
 
 export const recipes = [
   {
@@ -33,7 +53,7 @@ export const recipes = [
   {
     id: "teriyaki-salmon",
     title: "Teriyaki Salmon",
-    image: GarlicMirinChickenPicture,
+    image: TeriyakiSalmonPicture,
     ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
     instructions: [
       "Preheat the oven to 200°C (390°F).",
@@ -44,9 +64,155 @@ export const recipes = [
   },
   {
     id: "mc-muffin-with-bacon",
-    title: "Teriyaki Salmon",
-    image: GarlicMirinChickenPicture,
+    title: "MC Muffin with Bacon",
+    image: McMuffinPicture,
     images: [McMuffinPicture2],
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "bibimbap",
+    title: "Bibimbap",
+    image: BibimbapPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "turkish-soft-boiled-eggs",
+    title: "Turkish Soft Boiled Eggs",
+    image: TurkishSoftBoiledEggsPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "stir-fry-udon",
+    title: "Stir Fry Udon",
+    image: StirFryUdonPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "aioli-shrimp-with-fries",
+    title: "Aioli Shrimp with Fries",
+    image: AioliShrimpWithFriesPicture,
+    images: [AioliShrimpWithFriesPicture2],
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "hainanese-chicken-rice",
+    title: "Hainanese Chicken with Rice",
+    image: HainaneseChickenPicture,
+    images: [HainaneseChickenPicture2, HainaneseChickenPicture3, HainaneseChickenPicture4, HainaneseChickenPicture5, HainaneseChickenPicture6],
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "feijoada-moda-anna",
+    title: "Feijoada Moda Anna",
+    image: FeijoadaPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "stir-fry-beef-with-rice",
+    title: "Stir Fry Beef with Rice",
+    image: StirFryBeefRicePicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "polish-cabagge-rolls",
+    title: "Polish Cabagge Rolls",
+    image: PolishCabaggeRollsPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "fish-tacos",
+    title: "Fish Tacos",
+    image: FishTacosPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "tuna-and-beans-quesadilla",
+    title: "Tuna and Beans Quesadilla",
+    image: TunaBeansQuesadillaPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "korean-cold-noodles",
+    title: "Korean Cold Noodles",
+    image: KoreanColdNoodlesPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "chicken-katsu-curry",
+    title: "Chicken Katsu Curry",
+    image: ChickenKatsuCurryPicture,
     ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
     instructions: [
       "Preheat the oven to 200°C (390°F).",
