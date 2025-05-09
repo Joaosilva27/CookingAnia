@@ -20,7 +20,7 @@ import PolishInspiredKatsuChickenPicture from "../recipeImages/polish_inspired_c
 import RedCurryChickenPicture from "../recipeImages/red_curry_chicken.jpg";
 import TunaBeanQuesadillaPicture from "../recipeImages/tuna_and_beans_quesadilla.jpg";
 import EggPattiesPicture from "../recipeImages/egg_patties_fries_salad.jpg";
-import PizzaHeartPicture from "../recipeImages/pizza_heart.jpg";
+import PizzaHeartPicture from "../recipeImages/pizza_heart.JPG";
 
 export default function MealsPage() {
   const mealRecipes = [
