@@ -23,6 +23,12 @@ import FishTacosPicture from "./recipeImages/fish_tacos.jpg";
 import TunaBeansQuesadillaPicture from "./recipeImages/tuna_and_beans_quesadilla.jpg";
 import KoreanColdNoodlesPicture from "./recipeImages/korean_cold_noodles.jpg";
 import ChickenKatsuCurryPicture from "./recipeImages/chicken_katsu_curry.jpg";
+import OvenRoastedSalmonPicture from "./recipeImages/oven_roasted_salmon.jpg";
+import PokebowlPicture from "./recipeImages/pokebowl.jpg";
+import PolishInspiredKatsuChickenPicture from "./recipeImages/polish_inspired_chicken_katsu.jpg";
+import RedCurryChickenPicture from "./recipeImages/red_curry_chicken.jpg";
+import EggPattiesWithFriesAndSaladPicture from "./recipeImages/egg_patties_fries_salad.jpg";
+import HeartShapedPizzaPicture from "./recipeImages/pizza_heart.jpg";
 
 export const recipes = [
   {
@@ -213,6 +219,78 @@ export const recipes = [
     id: "chicken-katsu-curry",
     title: "Chicken Katsu Curry",
     image: ChickenKatsuCurryPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "oven-roasted-salmon",
+    title: "Oven Roasted Salmon",
+    image: OvenRoastedSalmonPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "pokebowl",
+    title: "Poké Bowl",
+    image: PokebowlPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "polish-inspired-katsu-chicken",
+    title: "Polish Inspired Katsu Chicken",
+    image: PolishInspiredKatsuChickenPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "red-curry-chicken",
+    title: "Red Curry Chicken",
+    image: RedCurryChickenPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "egg-patties-with-fries-and-salad",
+    title: "Egg Patties with Fries and Salad",
+    image: EggPattiesWithFriesAndSaladPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "heart-shaped-pizza",
+    title: "Heart-Shaped Pizza ❤️",
+    image: HeartShapedPizzaPicture,
     ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
     instructions: [
       "Preheat the oven to 200°C (390°F).",
