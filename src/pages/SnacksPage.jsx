@@ -3,7 +3,7 @@ import RecipeContainer from "../components/RecipeContainer";
 import SyrnikiPicture from "../recipeImages/syrniki.jpg";
 import TurkishHamSandwichPicture from "../recipeImages/turkish_ham_sandwich.jpg";
 import PlackiZiemniaczanePicture from "../recipeImages/placki_ziemniaczane.jpg";
-import McMuffinPicture from "../recipeImages/mc_muffin.jpg";
+import McMuffinPicture from "../recipeImages/mc_muffin.JPG";
 
 export default function SnacksPage() {
   const snackRecipes = [
