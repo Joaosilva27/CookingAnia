@@ -3,12 +3,14 @@ import RecipeContainer from "../components/RecipeContainer";
 import SyrnikiPicture from "../recipeImages/syrniki.jpg";
 import TurkishHamSandwichPicture from "../recipeImages/turkish_ham_sandwich.jpg";
 import PlackiZiemniaczanePicture from "../recipeImages/placki_ziemniaczane.jpg";
+import McMuffinPicture from "../recipeImages/mc_muffin.jpg";
 
 export default function SnacksPage() {
   const snackRecipes = [
     { title: "Syrniki", src: SyrnikiPicture, id: "syrniki" },
     { title: "Turkish Ham Sandwich", src: TurkishHamSandwichPicture, id: "turkish-ham-sandwich" },
     { title: "Placki Ziemniaczane", src: PlackiZiemniaczanePicture, id: "placki-ziemniaczane" },
+    { title: "MC Muffin with Bacon", src: McMuffinPicture, id: "mc-muffin-with-bacon" },
   ];
 
   return (

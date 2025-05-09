@@ -2,6 +2,7 @@ import MisoSalmonPicture from "./recipeImages/salmon_miso.jpg";
 import MisoSalmonPicture2 from "./recipeImages/miso_salmon_2.jpg";
 import MisoSalmonPicture3 from "./recipeImages/miso_salmon_3.jpg";
 import GarlicMirinChickenPicture from "./recipeImages/garlic_mirin_chicken.jpg";
+import McMuffinPicture2 from "./recipeImages/mc_muffin_2.jpg";
 
 export const recipes = [
   {
@@ -33,6 +34,19 @@ export const recipes = [
     id: "teriyaki-salmon",
     title: "Teriyaki Salmon",
     image: GarlicMirinChickenPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "mc-muffin-with-bacon",
+    title: "Teriyaki Salmon",
+    image: GarlicMirinChickenPicture,
+    images: [McMuffinPicture2],
     ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
     instructions: [
       "Preheat the oven to 200°C (390°F).",

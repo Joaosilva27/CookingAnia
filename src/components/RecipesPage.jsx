@@ -10,14 +10,13 @@ export default function RecipePage() {
   if (!recipe) return <p>Recipe not found</p>;
 
   return (
-    <div className='flex flex-col md:flex-row gap-6 p-6 max-w-6xl mx-auto'>
+    <div className='flex flex-col h-full md:flex-row gap-6 p-6 max-w-6xl mx-auto'>
       {/* left div */}
       <div className='md:w-1/2 flex flex-col items-center'>
-        <img
-          src={currentImage}
-          alt={recipe.title}
-          className='w-full max-w-md rounded-3xl border-4 border-pink-300 shadow-lg mb-4 transition-all duration-300'
-        />
+        <div className='w-full max-w-md h-[400px] overflow-hidden mb-4 rounded-3xl border-4 border-pink-300 shadow-lg'>
+          <img src={currentImage} alt={recipe.title} className='w-full h-full object-cover transition-all duration-300' />
+        </div>
+
         {recipe.images && (
           <div className='flex flex-wrap gap-2 justify-center'>
             {/* must map through .image as well so the current img is not lost once another one is selected */}
@@ -37,7 +36,7 @@ export default function RecipePage() {
       </div>
 
       {/* right div */}
-      <div className='md:w-1/2 bg-pink-50 p-6 rounded-3xl shadow-xl border-2 border-pink-200'>
+      <div className='md:w-1/2 bg-pink-50 p-6 rounded-3xl shadow-xl border-2 border-pink-200 h-full'>
         <h1 className='text-4xl font-extrabold text-pink-600 mb-4'>{recipe.title}</h1>
 
         <h2 className='text-2xl font-semibold text-pink-500 mb-2'>Ingredients</h2>
