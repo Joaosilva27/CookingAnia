@@ -11,11 +11,11 @@ import StirFryUdonPicture from "./recipeImages/stir_fry_udon.jpg";
 import AioliShrimpWithFriesPicture from "./recipeImages/aioli_shrimp.jpg";
 import AioliShrimpWithFriesPicture2 from "./recipeImages/aioli_shrimp_2.jpg";
 import HainaneseChickenPicture from "./recipeImages/hainanese_chicken_rice.jpg";
-import HainaneseChickenPicture2 from "./recipeImages/hainanese_chicken_rice_2.jpg";
-import HainaneseChickenPicture3 from "./recipeImages/hainanese_chicken_rice_3.png";
-import HainaneseChickenPicture4 from "./recipeImages/hainanese_chicken_rice_4.png";
-import HainaneseChickenPicture5 from "./recipeImages/hainanese_chicken_rice_5.png";
-import HainaneseChickenPicture6 from "./recipeImages/hainanese_chicken_rice_6.png";
+import HainaneseChickenPicture2 from "./recipeImages/hainanese_chicken_rice_2.JPG";
+import HainaneseChickenPicture3 from "./recipeImages/hainanese_chicken_rice_3.PNG";
+import HainaneseChickenPicture4 from "./recipeImages/hainanese_chicken_rice_4.PNG";
+import HainaneseChickenPicture5 from "./recipeImages/hainanese_chicken_rice_5.PNG";
+import HainaneseChickenPicture6 from "./recipeImages/hainanese_chicken_rice_6.PNG";
 import FeijoadaPicture from "./recipeImages/feijoada.jpg";
 import StirFryBeefRicePicture from "./recipeImages/stir_fry_beef_rice.jpg";
 import PolishCabaggeRollsPicture from "./recipeImages/polish_cabagge_rolls.jpg";
@@ -28,7 +28,7 @@ import PokebowlPicture from "./recipeImages/pokebowl.jpg";
 import PolishInspiredKatsuChickenPicture from "./recipeImages/polish_inspired_chicken_katsu.jpg";
 import RedCurryChickenPicture from "./recipeImages/red_curry_chicken.jpg";
 import EggPattiesWithFriesAndSaladPicture from "./recipeImages/egg_patties_fries_salad.jpg";
-import HeartShapedPizzaPicture from "./recipeImages/pizza_heart.jpg";
+import HeartShapedPizzaPicture from "./recipeImages/pizza_heart.JPG";
 
 export const recipes = [
   {
