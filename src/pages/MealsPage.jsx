@@ -21,6 +21,10 @@ import RedCurryChickenPicture from "../recipeImages/red_curry_chicken.jpg";
 import TunaBeanQuesadillaPicture from "../recipeImages/tuna_and_beans_quesadilla.jpg";
 import EggPattiesPicture from "../recipeImages/egg_patties_fries_salad.jpg";
 import PizzaHeartPicture from "../recipeImages/pizza_heart.JPG";
+import KoreanFriedChickenPicture from "../recipeImages/korean_fried_chicken.JPG";
+import TeriyakiChickenWithRicePicture from "../recipeImages/teriyaki_chicken_stir_fry_rice.JPG";
+import OvenRoastedChickenWithPotatoesPicture from "../recipeImages/oven_roasted_chicken_potatoes.JPG";
+import ChickenWingsWithCuscousPicture from "../recipeImages/chicken_wings_with_cuscous.JPG";
 
 export default function MealsPage() {
   const mealRecipes = [
@@ -45,6 +49,10 @@ export default function MealsPage() {
     { title: "Red Curry Chicken", src: RedCurryChickenPicture, id: "red-curry-chicken" },
     { title: "Egg Patties with Fries and Salad", src: EggPattiesPicture, id: "egg-patties-with-fries-and-salad" },
     { title: "Heart-Shaped Pizza", src: PizzaHeartPicture, id: "heart-shaped-pizza" },
+    { title: "Korean Fried Chicken", src: KoreanFriedChickenPicture, id: "korean-fried-chicken" },
+    { title: "Teriyaki Chicken with Stir Fry Rice", src: TeriyakiChickenWithRicePicture, id: "teriyaki-chicken-with-stir-fry-rice" },
+    { title: "Oven Roasted Chicken with Potatoes", src: OvenRoastedChickenWithPotatoesPicture, id: "oven-roasted-chicken-with-potatoes" },
+    { title: "Chicken Wings with Couscous", src: ChickenWingsWithCuscousPicture, id: "chicken-wings-with-couscous" },
   ];
 
   return (

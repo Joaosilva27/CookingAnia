@@ -4,6 +4,7 @@ import SyrnikiPicture from "../recipeImages/syrniki.jpg";
 import TurkishHamSandwichPicture from "../recipeImages/turkish_ham_sandwich.jpg";
 import PlackiZiemniaczanePicture from "../recipeImages/placki_ziemniaczane.jpg";
 import McMuffinPicture from "../recipeImages/mc_muffin.JPG";
+import AvocadoToastPicture from "../recipeImages/avocado_toast.JPG";
 
 export default function SnacksPage() {
   const snackRecipes = [
@@ -11,6 +12,7 @@ export default function SnacksPage() {
     { title: "Turkish Ham Sandwich", src: TurkishHamSandwichPicture, id: "turkish-ham-sandwich" },
     { title: "Placki Ziemniaczane", src: PlackiZiemniaczanePicture, id: "placki-ziemniaczane" },
     { title: "MC Muffin with Bacon", src: McMuffinPicture, id: "mc-muffin-with-bacon" },
+    { title: "Avocado Toast with Egg", src: AvocadoToastPicture, id: "avocado-toast-with-egg" },
   ];
 
   return (

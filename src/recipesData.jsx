@@ -8,6 +8,7 @@ import McMuffinPicture2 from "./recipeImages/mc_muffin_2.JPG";
 import BibimbapPicture from "./recipeImages/bibimbap.jpg";
 import TurkishSoftBoiledEggsPicture from "./recipeImages/turkish_boiled_eggs.jpg";
 import StirFryUdonPicture from "./recipeImages/stir_fry_udon.jpg";
+import StirFryUdonPicture2 from "./recipeImages/stir_fry_udon_2.JPG";
 import AioliShrimpWithFriesPicture from "./recipeImages/aioli_shrimp.jpg";
 import AioliShrimpWithFriesPicture2 from "./recipeImages/aioli_shrimp_2.jpg";
 import HainaneseChickenPicture from "./recipeImages/hainanese_chicken_rice.jpg";
@@ -29,6 +30,13 @@ import PolishInspiredKatsuChickenPicture from "./recipeImages/polish_inspired_ch
 import RedCurryChickenPicture from "./recipeImages/red_curry_chicken.jpg";
 import EggPattiesWithFriesAndSaladPicture from "./recipeImages/egg_patties_fries_salad.jpg";
 import HeartShapedPizzaPicture from "./recipeImages/pizza_heart.JPG";
+import KoreanFriedChickenPicture from "./recipeImages/korean_fried_chicken.JPG";
+import TeriyakiChickenStirFryRicePicture from "./recipeImages/teriyaki_chicken_stir_fry_rice.JPG";
+import OvenRoastedChickenWithPotatoesPicture from "./recipeImages/oven_roasted_chicken_potatoes.JPG";
+import AvocadoToastPicture from "./recipeImages/avocado_toast.JPG";
+import AvocadoToastPicture2 from "./recipeImages/avocado_toast_2.JPG";
+import AvocadoToastPicture3 from "./recipeImages/avocado_toast_3.JPG";
+import ChickenWingsWithCouscousPicture from "./recipeImages/chicken_wings_with_cuscous.JPG";
 
 export const recipes = [
   {
@@ -109,6 +117,7 @@ export const recipes = [
     id: "stir-fry-udon",
     title: "Stir Fry Udon",
     image: StirFryUdonPicture,
+    images: [StirFryUdonPicture2],
     ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
     instructions: [
       "Preheat the oven to 200°C (390°F).",
@@ -291,6 +300,79 @@ export const recipes = [
     id: "heart-shaped-pizza",
     title: "Heart-Shaped Pizza ❤️",
     image: HeartShapedPizzaPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "korean-fried-chicken",
+    title: "Korean Fried Chicken",
+    image: KoreanFriedChickenPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "korean-fried-chicken",
+    title: "Korean Fried Chicken",
+    image: KoreanFriedChickenPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "teriyaki-chicken-with-stir-fry-rice",
+    title: "Teriyaki Chicken with Stir Fry Rice",
+    image: TeriyakiChickenStirFryRicePicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "oven-roasted-chicken-with-potatoes",
+    title: "Oven Roasted Chicken with Potatoes",
+    image: OvenRoastedChickenWithPotatoesPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "avocado-toast-with-egg",
+    title: "Avocado Toast with Egg",
+    image: AvocadoToastPicture,
+    images: [AvocadoToastPicture2, AvocadoToastPicture3],
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "chicken-wings-with-couscous",
+    title: "Chicken Wings with Couscous",
+    image: ChickenWingsWithCouscousPicture,
     ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
     instructions: [
       "Preheat the oven to 200°C (390°F).",
