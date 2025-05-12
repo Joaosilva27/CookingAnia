@@ -1,3 +1,11 @@
+# Cooking Ania
+
+Web app I built to keep track of my gf's beautiful recipes ❤️.
+
+[Visit](https://cooking-ania.vercel.app/)
+
+<img src="https://github.com/user-attachments/assets/062325d2-c49b-442d-8dc8-e97f53752ec3" alt="macbook-air-m2-lid-open" height="600rem">
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
