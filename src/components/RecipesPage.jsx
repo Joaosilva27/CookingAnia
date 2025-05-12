@@ -74,9 +74,16 @@ export default function RecipePage() {
           </div>
         )}
 
-        <div className='flex flex-col'>
-          <span>If my lazy gf did not write the recipe, you can use AI to try to generate one for you.</span>
-          <button onClick={() => onGenerateRecipeData(recipe.title)} className='text-green-500 underline font-bold mb-1'>
+        <div className='flex flex-col items-center mt-4 bg-[#FFE5B4] p-3 rounded-xl border-2 border-[#FFA500]'>
+          <span className='text-[#FF6B6B] font-bold text-center mb-2 italic'>
+            If my lazy gf did not write the recipe, you can use AI to try to generate one for you.
+          </span>
+          <button
+            onClick={() => onGenerateRecipeData(recipe.title)}
+            className='bg-[#4ECDC4] text-white font-bold py-2 px-4 rounded-full 
+                       hover:bg-[#45B7AA] transition duration-300 
+                       active:scale-95 shadow-md'
+          >
             AI Recipe
           </button>
 
