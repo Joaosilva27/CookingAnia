@@ -72,11 +72,21 @@ export default function RecipePage() {
 
         <div className='flex flex-col'>
           <span>If my lazy gf did not write the recipe, you can use AI to try to generate one for you.</span>
-          <button onClick={() => onGenerateRecipeData(recipe.title)} className='text-green-500 underline font-bold'>
+          <button onClick={() => onGenerateRecipeData(recipe.title)} className='text-green-500 underline font-bold mb-1'>
             AI Recipe
           </button>
 
-          {aiRecipeText && <ReactMarkdown children={aiRecipeText} remarkPlugins={[remarkGfm]} />}
+          {aiRecipeText && (
+            <ReactMarkdown
+              children={aiRecipeText}
+              remarkPlugins={[remarkGfm]}
+              components={{
+                h1: ({ node, ...props }) => <i style={{ color: "green", fontSize: "1.3rem", marginBottom: "1rem" }} {...props} />,
+                h2: ({ node, ...props }) => <i style={{ color: "#e5007a", fontSize: "1.1rem" }} {...props} />,
+                p: ({ node, ...props }) => <i style={{ color: "green" }} {...props} />,
+              }}
+            />
+          )}
         </div>
       </div>
     </div>

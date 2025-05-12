@@ -11,3 +11,23 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+ol {
+  margin-top: 1rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  list-style: decimal;
+  padding-left: 2rem;
+}
+
+ul {
+  margin-top: 1rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  list-style: circle;
+  padding-left: 2rem;
+}
+
+.markdown > * {
+  all: revert;
+}
