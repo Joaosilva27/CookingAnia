@@ -86,6 +86,7 @@ export default function RecipePage() {
             </span>
             <button
               onClick={() => onGenerateRecipeData(recipe.title)}
+              disabled={isRecipeBeingGenerated ? true : false}
               className='bg-[#4ECDC4] text-white font-bold py-2 px-4 rounded-full 
               hover:bg-[#45B7AA] transition duration-300 
               active:scale-95 shadow-md'
