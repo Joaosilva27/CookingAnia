@@ -3,6 +3,8 @@ import { useParams } from "react-router";
 import { recipes } from "../recipesData";
 import { GoogleGenAI } from "@google/genai";
 import { prompt } from "../GeminiPrompt";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 export default function RecipePage() {
   const { id } = useParams();
@@ -74,7 +76,7 @@ export default function RecipePage() {
             AI Recipe
           </button>
 
-          {aiRecipeText && aiRecipeText}
+          {aiRecipeText && <ReactMarkdown children={aiRecipeText} remarkPlugins={[remarkGfm]} />}
         </div>
       </div>
     </div>
