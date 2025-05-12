@@ -74,31 +74,33 @@ export default function RecipePage() {
           </div>
         )}
 
-        <div className='flex flex-col items-center mt-4 bg-[#FFE5B4] p-3 rounded-xl border-2 border-[#FFA500]'>
-          <span className='text-[#FF6B6B] font-bold text-center mb-2 italic'>
-            If my lazy gf did not write the recipe, you can use AI to try to generate one for you.
-          </span>
-          <button
-            onClick={() => onGenerateRecipeData(recipe.title)}
-            className='bg-[#4ECDC4] text-white font-bold py-2 px-4 rounded-full 
-                       hover:bg-[#45B7AA] transition duration-300 
-                       active:scale-95 shadow-md'
-          >
-            AI Recipe
-          </button>
+        {!recipe.ingredients && !recipe.instructions && (
+          <div className='flex flex-col items-center mt-4 bg-[#FFE5B4] p-3 rounded-xl border-2 border-[#FFA500]'>
+            <span className='text-[#FF6B6B] font-bold text-center mb-2 italic'>
+              My lazy gf did not write this recipe, you can use AI to try to generate one for you.
+            </span>
+            <button
+              onClick={() => onGenerateRecipeData(recipe.title)}
+              className='bg-[#4ECDC4] text-white font-bold py-2 px-4 rounded-full 
+              hover:bg-[#45B7AA] transition duration-300 
+              active:scale-95 shadow-md'
+            >
+              AI Recipe
+            </button>
 
-          {aiRecipeText && (
-            <ReactMarkdown
-              children={aiRecipeText}
-              remarkPlugins={[remarkGfm]}
-              components={{
-                h1: ({ node, ...props }) => <i style={{ color: "green", fontSize: "1.3rem", marginBottom: "1rem" }} {...props} />,
-                h2: ({ node, ...props }) => <i style={{ color: "#e5007a", fontSize: "1.1rem" }} {...props} />,
-                p: ({ node, ...props }) => <i style={{ color: "green" }} {...props} />,
-              }}
-            />
-          )}
-        </div>
+            {aiRecipeText && (
+              <ReactMarkdown
+                children={aiRecipeText}
+                remarkPlugins={[remarkGfm]}
+                components={{
+                  h1: ({ node, ...props }) => <i style={{ color: "green", fontSize: "1.3rem", marginBottom: "1rem" }} {...props} />,
+                  h2: ({ node, ...props }) => <i style={{ color: "#e5007a", fontSize: "1.1rem" }} {...props} />,
+                  p: ({ node, ...props }) => <i style={{ color: "green" }} {...props} />,
+                }}
+              />
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
