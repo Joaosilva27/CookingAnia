@@ -5,24 +5,29 @@ import { GoogleGenAI } from "@google/genai";
 import { prompt } from "../GeminiPrompt";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import FryingPanIcon from "../icons/frying_pan.png";
 
 export default function RecipePage() {
   const { id } = useParams();
   const recipe = recipes.find(r => r.id === id);
   const [currentImage, setCurrentImage] = useState(recipe?.image || "");
   const [aiRecipeText, setAiRecipeText] = useState("");
+  const [isRecipeBeingGenerated, setIsRecipeBeingGenerated] = useState(false);
 
   const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
   if (!recipe) return <p>Recipe not found</p>;
 
   async function onGenerateRecipeData(recipeName) {
+    setIsRecipeBeingGenerated(true);
+
     const response = await ai.models.generateContent({
       model: "gemini-2.0-flash",
       contents: prompt + recipeName,
     });
 
     setAiRecipeText(response.text);
+    setIsRecipeBeingGenerated(false);
     console.log(response.text);
   }
 
@@ -85,7 +90,13 @@ export default function RecipePage() {
               hover:bg-[#45B7AA] transition duration-300 
               active:scale-95 shadow-md'
             >
-              AI Recipe
+              {isRecipeBeingGenerated ? (
+                <span className='flex justify-center items-center'>
+                  Generating {recipe.title} recipe... <img src={FryingPanIcon} className='h-6 ml-1 animate-bounce' />
+                </span>
+              ) : (
+                <span>AI Recipe</span>
+              )}
             </button>
 
             {aiRecipeText && (
