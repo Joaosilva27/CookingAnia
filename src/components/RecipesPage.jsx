@@ -12,6 +12,7 @@ export default function RecipePage() {
   const recipe = recipes.find(r => r.id === id);
   const [currentImage, setCurrentImage] = useState(recipe?.image || "");
   const [aiRecipeText, setAiRecipeText] = useState("");
+  const aiRecipeTextLocalStorage = localStorage.getItem("ai_recipe");
   const [isRecipeBeingGenerated, setIsRecipeBeingGenerated] = useState(false);
 
   const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
@@ -28,6 +29,7 @@ export default function RecipePage() {
 
     setAiRecipeText(response.text);
     setIsRecipeBeingGenerated(false);
+    localStorage.setItem("ai_recipe", response.text); // adding this in case user refreshes the page
     console.log(response.text);
   }
 
@@ -102,10 +104,10 @@ export default function RecipePage() {
               )}
             </button>
 
-            {aiRecipeText && (
+            {(aiRecipeText || aiRecipeTextLocalStorage) && (
               <div className='flex flex-col items-center mt-4 bg-[#FFE5B4] p-3 rounded-xl border-2 border-[#FFA500]'>
                 <ReactMarkdown
-                  children={aiRecipeText}
+                  children={aiRecipeText ? aiRecipeText : aiRecipeTextLocalStorage}
                   remarkPlugins={[remarkGfm]}
                   components={{
                     h1: ({ node, ...props }) => <i style={{ color: "green", fontSize: "1.3rem", marginBottom: "1rem" }} {...props} />,
