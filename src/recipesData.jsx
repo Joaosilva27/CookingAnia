@@ -1,12 +1,10 @@
+// Meal images
 import MisoSalmonPicture from "./recipeImages/salmon_miso.jpg";
 import MisoSalmonPicture2 from "./recipeImages/miso_salmon_2.jpg";
 import MisoSalmonPicture3 from "./recipeImages/miso_salmon_3.jpg";
 import TeriyakiSalmonPicture from "./recipeImages/tariyaki_salmon.JPG";
 import GarlicMirinChickenPicture from "./recipeImages/garlic_mirin_chicken.jpg";
-import McMuffinPicture from "./recipeImages/mc_muffin.JPG";
-import McMuffinPicture2 from "./recipeImages/mc_muffin_2.JPG";
 import BibimbapPicture from "./recipeImages/bibimbap.jpg";
-import TurkishSoftBoiledEggsPicture from "./recipeImages/turkish_boiled_eggs.jpg";
 import StirFryUdonPicture from "./recipeImages/stir_fry_udon.jpg";
 import StirFryUdonPicture2 from "./recipeImages/stir_fry_udon_2.JPG";
 import AioliShrimpWithFriesPicture from "./recipeImages/aioli_shrimp.jpg";
@@ -33,14 +31,31 @@ import HeartShapedPizzaPicture from "./recipeImages/pizza_heart.JPG";
 import KoreanFriedChickenPicture from "./recipeImages/korean_fried_chicken.JPG";
 import TeriyakiChickenStirFryRicePicture from "./recipeImages/teriyaki_chicken_stir_fry_rice.JPG";
 import OvenRoastedChickenWithPotatoesPicture from "./recipeImages/oven_roasted_chicken_potatoes.JPG";
+import ChickenWingsWithCouscousPicture from "./recipeImages/chicken_wings_with_cuscous.JPG";
+import PastaBakePicture from "./recipeImages/pasta_bake.jpg";
+import TurkishSoftBoiledEggsPicture from "./recipeImages/turkish_boiled_eggs.jpg";
+
+// Soup images
+import BeefUdonImage from "./recipeImages/beef_udon_soup.jpg";
+import RamenPicture from "./recipeImages/ramen.jpg";
+
+// Snack images
+import McMuffinPicture from "./recipeImages/mc_muffin.JPG";
+import McMuffinPicture2 from "./recipeImages/mc_muffin_2.JPG";
 import AvocadoToastPicture from "./recipeImages/avocado_toast.JPG";
 import AvocadoToastPicture2 from "./recipeImages/avocado_toast_2.JPG";
 import AvocadoToastPicture3 from "./recipeImages/avocado_toast_3.JPG";
-import ChickenWingsWithCouscousPicture from "./recipeImages/chicken_wings_with_cuscous.JPG";
-import PastaBakePicture from "./recipeImages/pasta_bake.jpg";
+import SyrnikiPicture from "./recipeImages/syrniki.jpg";
+import TurkishHamSandwichPicture from "./recipeImages/turkish_ham_sandwich.jpg";
+import PlackiZiemniaczanePicture from "./recipeImages/placki_ziemniaczane.jpg";
+
+// Desert images
 import VeganCarrotCakePicture from "./recipeImages/vegan_carrot_cake.JPG";
 import VeganCarrotCakePicture2 from "./recipeImages/vegan_carrot_cake_2.JPG";
 import VeganCarrotCakePicture3 from "./recipeImages/vegan_carrot_cake_3.JPG";
+import CheesecakePicture from "./recipeImages/cheesecake.jpg";
+import MangoStickyRicePicture from "./recipeImages/mango_sticky_rice.jpg";
+import BananaBreadPicture from "./recipeImages/banana_bread.jpg";
 
 export const recipes = [
   {
@@ -402,6 +417,102 @@ export const recipes = [
     title: "Vegan Carrot Cake",
     image: VeganCarrotCakePicture,
     images: [VeganCarrotCakePicture2, VeganCarrotCakePicture3],
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "basque-cheesecake",
+    title: "Basque Cheesecake",
+    image: CheesecakePicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "mango-sticky-rice",
+    title: "Mango Sticky Rice",
+    image: MangoStickyRicePicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "banana-bread",
+    title: "Banana Bread",
+    image: BananaBreadPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "syrniki",
+    title: "Syrniki",
+    image: SyrnikiPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "turkish-ham-sandwich",
+    title: "Turkish Ham Sandwich",
+    image: TurkishHamSandwichPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "placki-ziemniaczane",
+    title: "Placki Ziemniaczane",
+    image: PlackiZiemniaczanePicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "beef-udon",
+    title: "Beef Udon",
+    image: BeefUdonImage,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "ramen",
+    title: "Ramen",
+    image: RamenPicture,
     ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
     instructions: [
       "Preheat the oven to 200°C (390°F).",
