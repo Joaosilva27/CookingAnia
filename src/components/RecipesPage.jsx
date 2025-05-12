@@ -56,19 +56,23 @@ export default function RecipePage() {
       <div className='md:w-1/2 bg-pink-50 p-6 rounded-3xl shadow-xl border-2 border-pink-200 h-full'>
         <h1 className='text-4xl font-extrabold text-pink-600 mb-4'>{recipe.title}</h1>
 
-        <h2 className='text-2xl font-semibold text-pink-500 mb-2'>Ingredients</h2>
-        <ul className='list-disc list-inside mb-4 text-pink-800'>
-          {recipe.ingredients.map((item, idx) => (
-            <li key={idx}>{item}</li>
-          ))}
-        </ul>
+        {recipe.ingredients && recipe.instructions && (
+          <div>
+            <h2 className='text-2xl font-semibold text-pink-500 mb-2'>Ingredients</h2>
+            <ul className='list-disc list-inside mb-4 text-pink-800'>
+              {recipe.ingredients.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
 
-        <h2 className='text-2xl font-semibold text-pink-500 mb-2'>Instructions</h2>
-        <ol className='list-decimal list-inside text-pink-800 space-y-2 mb-4'>
-          {recipe.instructions.map((step, idx) => (
-            <li key={idx}>{step}</li>
-          ))}
-        </ol>
+            <h2 className='text-2xl font-semibold text-pink-500 mb-2'>Instructions</h2>
+            <ol className='list-decimal list-inside text-pink-800 space-y-2 mb-4'>
+              {recipe.instructions.map((step, idx) => (
+                <li key={idx}>{step}</li>
+              ))}
+            </ol>
+          </div>
+        )}
 
         <div className='flex flex-col'>
           <span>If my lazy gf did not write the recipe, you can use AI to try to generate one for you.</span>
