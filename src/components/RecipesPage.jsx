@@ -1,13 +1,28 @@
 import React, { useState } from "react";
 import { useParams } from "react-router";
 import { recipes } from "../recipesData";
+import { GoogleGenAI } from "@google/genai";
+import { prompt } from "../GeminiPrompt";
 
 export default function RecipePage() {
   const { id } = useParams();
   const recipe = recipes.find(r => r.id === id);
   const [currentImage, setCurrentImage] = useState(recipe?.image || "");
+  const [aiRecipeText, setAiRecipeText] = useState("");
+
+  const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
   if (!recipe) return <p>Recipe not found</p>;
+
+  async function onGenerateRecipeData(recipeName) {
+    const response = await ai.models.generateContent({
+      model: "gemini-2.0-flash",
+      contents: prompt + recipeName,
+    });
+
+    setAiRecipeText(response.text);
+    console.log(response.text);
+  }
 
   return (
     <div className='flex flex-col h-full md:flex-row gap-6 p-6 max-w-6xl mx-auto'>
@@ -47,11 +62,20 @@ export default function RecipePage() {
         </ul>
 
         <h2 className='text-2xl font-semibold text-pink-500 mb-2'>Instructions</h2>
-        <ol className='list-decimal list-inside text-pink-800 space-y-2'>
+        <ol className='list-decimal list-inside text-pink-800 space-y-2 mb-4'>
           {recipe.instructions.map((step, idx) => (
             <li key={idx}>{step}</li>
           ))}
         </ol>
+
+        <div className='flex flex-col'>
+          <span>If my lazy gf did not write the recipe, you can use AI to try to generate one for you.</span>
+          <button onClick={() => onGenerateRecipeData(recipe.title)} className='text-green-500 underline font-bold'>
+            AI Recipe
+          </button>
+
+          {aiRecipeText && aiRecipeText}
+        </div>
       </div>
     </div>
   );
