@@ -94,6 +94,8 @@ export default function RecipePage() {
                 <span className='flex justify-center items-center'>
                   Generating {recipe.title} recipe... <img src={FryingPanIcon} className='h-6 ml-1 animate-bounce' />
                 </span>
+              ) : aiRecipeText != "" ? (
+                <span>Try generating a recipe again</span>
               ) : (
                 <span>AI Recipe</span>
               )}
