@@ -104,7 +104,7 @@ export default function RecipePage() {
               )}
             </button>
 
-            {(aiRecipeText || aiRecipeTextLocalStorage) && (
+            {aiRecipeText ? (
               <div className='flex flex-col items-center mt-4 bg-[#FFE5B4] p-3 rounded-xl border-2 border-[#FFA500]'>
                 <ReactMarkdown
                   children={aiRecipeText ? aiRecipeText : aiRecipeTextLocalStorage}
@@ -116,6 +116,20 @@ export default function RecipePage() {
                   }}
                 />
               </div>
+            ) : (
+              aiRecipeTextLocalStorage.includes(recipe.title) && (
+                <div className='flex flex-col items-center mt-4 bg-[#FFE5B4] p-3 rounded-xl border-2 border-[#FFA500]'>
+                  <ReactMarkdown
+                    children={aiRecipeText ? aiRecipeText : aiRecipeTextLocalStorage}
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      h1: ({ node, ...props }) => <i style={{ color: "green", fontSize: "1.3rem", marginBottom: "1rem" }} {...props} />,
+                      h2: ({ node, ...props }) => <i style={{ color: "#e5007a", fontSize: "1.1rem" }} {...props} />,
+                      p: ({ node, ...props }) => <i style={{ color: "green" }} {...props} />,
+                    }}
+                  />
+                </div>
+              )
             )}
           </div>
         )}
