@@ -37,6 +37,10 @@ import AvocadoToastPicture from "./recipeImages/avocado_toast.JPG";
 import AvocadoToastPicture2 from "./recipeImages/avocado_toast_2.JPG";
 import AvocadoToastPicture3 from "./recipeImages/avocado_toast_3.JPG";
 import ChickenWingsWithCouscousPicture from "./recipeImages/chicken_wings_with_cuscous.JPG";
+import PastaBakePicture from "./recipeImages/pasta_bake.jpg";
+import VeganCarrotCakePicture from "./recipeImages/vegan_carrot_cake.JPG";
+import VeganCarrotCakePicture2 from "./recipeImages/vegan_carrot_cake_2.JPG";
+import VeganCarrotCakePicture3 from "./recipeImages/vegan_carrot_cake_3.JPG";
 
 export const recipes = [
   {
@@ -373,6 +377,31 @@ export const recipes = [
     id: "chicken-wings-with-couscous",
     title: "Chicken Wings with Couscous",
     image: ChickenWingsWithCouscousPicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "pasta-bake",
+    title: "Pasta Bake",
+    image: PastaBakePicture,
+    ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
+    instructions: [
+      "Preheat the oven to 200°C (390°F).",
+      "Mix miso, mirin, and soy sauce in a bowl.",
+      "Brush mixture onto salmon fillet.",
+      "Bake for 15-18 minutes or until cooked through.",
+    ],
+  },
+  {
+    id: "vegan-carrot-cake",
+    title: "Vegan Carrot Cake",
+    image: VeganCarrotCakePicture,
+    images: [VeganCarrotCakePicture2, VeganCarrotCakePicture3],
     ingredients: ["1 salmon fillet", "2 tbsp miso paste", "1 tbsp mirin", "1 tsp soy sauce"],
     instructions: [
       "Preheat the oven to 200°C (390°F).",

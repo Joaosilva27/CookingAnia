@@ -25,6 +25,7 @@ import KoreanFriedChickenPicture from "../recipeImages/korean_fried_chicken.JPG"
 import TeriyakiChickenWithRicePicture from "../recipeImages/teriyaki_chicken_stir_fry_rice.JPG";
 import OvenRoastedChickenWithPotatoesPicture from "../recipeImages/oven_roasted_chicken_potatoes.JPG";
 import ChickenWingsWithCuscousPicture from "../recipeImages/chicken_wings_with_cuscous.JPG";
+import PastaBakePicture from "../recipeImages/pasta_bake.jpg";
 
 export default function MealsPage() {
   const mealRecipes = [
@@ -53,6 +54,7 @@ export default function MealsPage() {
     { title: "Teriyaki Chicken with Stir Fry Rice", src: TeriyakiChickenWithRicePicture, id: "teriyaki-chicken-with-stir-fry-rice" },
     { title: "Oven Roasted Chicken with Potatoes", src: OvenRoastedChickenWithPotatoesPicture, id: "oven-roasted-chicken-with-potatoes" },
     { title: "Chicken Wings with Couscous", src: ChickenWingsWithCuscousPicture, id: "chicken-wings-with-couscous" },
+    { title: "Pasta Bake", src: PastaBakePicture, id: "pasta-bake" },
   ];
 
   return (
