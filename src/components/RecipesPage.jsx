@@ -12,7 +12,7 @@ export default function RecipePage() {
   const recipe = recipes.find(r => r.id === id);
   const [currentImage, setCurrentImage] = useState(recipe?.image || "");
   const [aiRecipeText, setAiRecipeText] = useState("");
-  const aiRecipeTextLocalStorage = localStorage.getItem("ai_recipe");
+  const aiRecipeTextLocalStorage = localStorage.getItem("ai_recipe") || "";
   const [isRecipeBeingGenerated, setIsRecipeBeingGenerated] = useState(false);
 
   const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
@@ -117,7 +117,7 @@ export default function RecipePage() {
                 />
               </div>
             ) : (
-              aiRecipeTextLocalStorage.includes(recipe.title) && (
+              aiRecipeTextLocalStorage?.includes(recipe.title) && (
                 <div className='flex flex-col items-center mt-4 bg-[#FFE5B4] p-3 rounded-xl border-2 border-[#FFA500]'>
                   <ReactMarkdown
                     children={aiRecipeText ? aiRecipeText : aiRecipeTextLocalStorage}
