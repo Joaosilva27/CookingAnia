@@ -23,7 +23,7 @@ export default function RecipePage() {
     setIsRecipeBeingGenerated(true);
 
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash-preview-04-17",
+      model: "gemini-flash-latest",
       contents: prompt + recipeName,
     });
 
